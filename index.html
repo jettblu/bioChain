@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blockchain and Biotech. Get a piece of the future in your mailbox every week.">
+  <title>bioChain</title>
+  <link rel="icon" type="image/svg+xml" href="../biochainlogo.svg">
+	<link rel="alternate icon"  href="../biochainlogo.png">
+    <!-- Icons -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet">
+<script src="../scripts/textAnimation.js"></script>
+	<!-- Materialize components -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+   <link rel="stylesheet" href="../style/style.css">
+   <script>
+       $(function(){
+       $("#navBar").load("../components/navBar.html");
+       });
+    </script>
+</head>
+
+<body>
+  <main>
+    <div id="navBar"></div>
+    <center>
+
+
+      <div class="container">
+
+        <img class="hide-on-med-and-up" style="width: 350px; display:block; margin-right: 20px;"" src="../biochainImg.png" />
+        <img class="hide-on-small-only" style="width: 400px; display:block" src="../biochainMain.svg" />
+
+        <h5 class="black-text text" style="font-style: italic">Blockchain and BioTech</h5>
+        <br>
+          <div class="row">
+    <div class="col s12 m8 l6 offset-l3 offset-m2">
+      <div class="card black hoverable" style="border-radius: 25px 25px 25px 25px; font-family: 'Cousine', monospace; font-size: 20px; color: white;">
+        <div class="card-title darkGradient lighten-1 center" style="border-radius: 15px 15px 0px 0px;">
+                    <span style="margin-left: 10px; color: white;">Join the Tech. Revolution</span>
+          </div>
+          <br>
+        <div class="card-content">
+           <div class="row">
+             <p style="color:whitesmoke;">A piece of the future. Your Inbox. Every Sunday.</p>
+             </div>
+          <div class="row">
+            <div  class='input-field col s12 l6 m8 offset-l3 offset-m2'>
+              <input class='validate' type='email' name='email' id='email' placeholder="Enter Your Email" />
+            </div>
+          </div>
+
+          <div class="row">
+            <button type="submit" id='btnSubscribe' class='col s12 l6 m8 offset-l3 offset-m2 btn btn-large waves-effect sunGradient'>Subscribe</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<a href="../all.html" style="font-size: 22px">All Pieces &#8594</a>
+
+    </center>
+
+
+    <div class="section"></div>
+    <div class="section"></div>
+  </main>
+
+<script src="../scripts/subscribe.js"></script>
+<script>
+  const phrases = ["Blockchain and BioTech", "The Story of Who We Are", "The Story of Who We Will Become"];
+
+  const el = document.querySelector(".text");
+  const fx = new TextScramble(el);
+  let counter = 0;
+  const next = () => {
+    fx.setText(phrases[counter]).then(() => {
+      setTimeout(next, 1500);
+    });
+    counter = (counter + 1) % phrases.length;
+  };
+  next();
+  </script>
+
+<!-- Default Statcounter code for BioChain
+https://www.biochain.blog/ -->
+<script type="text/javascript">
+var sc_project=12508791;
+var sc_invisible=1;
+var sc_security="983051e0";
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12508791/0/983051e0/1/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<script>
+  $(document).ready(function () {
+   $(".button-collapse").sideNav();
+  });
+  </script>
+<nav class="z-depth-0">
+    <div class="nav-wrapper white">
+	  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="black-text material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right z-depth-0 hide-on-med-and-down">
+        <li><a class="navLinks" href="../add.html">Add</a></li>
+        <li><a class="navLinks" href="../all.html">All</a></li>
+        <li><a class="navLinks" href="../index.html">Subscribe</a></li>
+      </ul>
+    </div>
+</nav>
+<ul class="right side-nav grey lighten-5" id="mobile-demo">
+  <br>
+  <div class="center-align"><img src="../biochainlogo.svg" height="57px" alt="biochain logo" href="../index.html" style="margin-top: 5px"></div>
+  <li><a class="navLinks" href="../add.html">Add</a></li>
+  <li><a class="navLinks" href="../all.html">All</a></li>
+  <li><a class="navLinks" href="../index.html">Subscribe</a></li>
+</ul>

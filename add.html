@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blockchain and Biotech. Get a piece of the future in your mailbox every week.">
+  <title>bioChain</title>
+  <link rel="icon" type="image/svg+xml" href="../biochainlogo.svg">
+	<link rel="alternate icon"  href="../biochainlogo.png">
+    <!-- Icons -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet">
+<script src="../scripts/textAnimation.js"></script>
+	<!-- Materialize components -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+   <link rel="stylesheet" href="../style/style.css">
+   	<!-- Navbar initialize and includes -->
+   <script>
+       $(function(){
+       $("#navBar").load("../components/navBar.html");
+       });
+    </script>
+    <style>
+            .blurb {
+          animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+        }
+
+        @keyframes reveal {
+          0% {
+            opacity: 0;
+            transform: translate(0,100%);
+          }
+          100% {
+            opacity: 1;
+            transform: translate(0,0);
+          }
+        }
+        :root {
+    --delay: 0;
+    --duration: 800ms;
+    --iterations: 1;
+    }
+
+    </style>
+</head>
+
+<body>
+  <main>
+  <div id="navBar"></div>
+    <center>
+
+      <div class="container">
+
+        <img class="hide-on-med-and-up" style="width: 350px; display:block; margin-right: 20px;"" src="../biochainImg.png" />
+        <img class="hide-on-small-only" style="width: 400px; display:block" src="../biochainMain.svg" />
+
+        <h6 class="black-text text" style="font-style: italic">Write a piece on blockchain or biotechnology. If your piece is posted, you will recieve $10 in bitcoin. </h6>
+        <br>
+        <div class="row">
+          <div class="col s12 m8 l8 offset-l2 offset-m2">
+        <form action="../scripts/submissionManager.php" method="post">
+          <div class="row">
+           <div class="card darkGradient hoverable col s12" style="border-radius: 25px 25px 25px 25px; font-family: 'Cousine', monospace; font-size: 20px; color: white;">
+             <div class="card-title lighten-1 left-align">
+                         <span style="margin-left: 10px; color: white;">Submit Piece</span>
+               </div>
+             <div class="row">
+            <div class="input-field col s6">
+              <input id="email" type="email" name="email" class="validate">
+              <label for="email">Email</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="bitcoinAddress" name="bitcoinAddress" type="text" class="validate">
+                <label for="bitcoinAddress">Bitcoin Address</label>
+              </div>
+            </div>
+            <div class="row">
+           <div class="input-field col s6">
+             <input id="articleTitle" type="text" name="articleTitle" class="validate">
+             <label for="articleTitle">Piece Title</label>
+             </div>
+             <div class="input-field col s6">
+               <input id="articleType" type="text" name="articleType" class="validate">
+               <label for="articleType">Piece Type</label>
+             </div>
+           </div>
+             <div class="row">
+               <div class="input-field col s12">
+                 <textarea id="articleSubmission" name="articleSubmission" class="materialize-textarea"></textarea>
+                 <label for="articleSubmission">Your Piece</label>
+               </div>
+             </div>
+             <div class="row">
+               <button type="submit" id='btnArticleSubmit' class='col s8 l6 m8 offset-l3 offset-m2 offset-s2 btn btn-large waves-effect sunGradient'>Submit</button>
+             </div>
+    </div>
+    </div>
+    </form>
+</div>
+</div>
+<p class="blurb"> To eliminate transaction fees, we reccomend that you use an <em>instant send</em> enabled bitcoin address. Learn more <a href="https://help.coinbase.com/en/coinbase/trading-and-funding/sending-or-receiving-cryptocurrency/instant-sends">here</a>.</p>
+    </center>
+</div>
+
+    <div class="section"></div>
+    <div class="section"></div>
+  </main>
+
+
+</body>
+</html>

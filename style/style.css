@@ -1,0 +1,136 @@
+.navbar{
+  background-color:#0068FD !important;
+  height: 45px;
+  color: red;
+  background-size: cover;
+}
+
+input[type=range]::-moz-focus-outer {
+    border: 0;
+	outline: none;
+    }
+
+input[type=range]:focus {
+    outline: none;
+}
+
+.main{
+	background-color: lightGradient
+}
+
+
+.input-field {
+     color:orange;
+}
+
+.navLinks{color: black; font-family: 'Cousine', monospace;}
+
+
+.flexbox {
+  display: flex;
+  flew-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.collapsibleContent{
+  background-color: #f7f7f7;
+  color: black;
+  font: Verdana;
+  font-size: 102%;
+}
+.headCollapsible{
+  background-color: white;
+  color: black;
+}
+
+input:hover{cursor:pointer;}
+
+
+.darkGradient{
+        background-image:
+		linear-gradient(
+		  to right, #050505, #7d7d7d);}
+
+.sunGradient{
+              background-image:
+      		linear-gradient(
+      		  to right, #fccf2d, #fcb42d, #fccf2d);}
+
+
+a{color: #ffbb33}
+
+
+
+a:hover{cursor: pointer;}
+
+
+.form-inline {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container{
+  margin-top: 45px;
+  position: relative;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color:#0078bd;
+  line-height: 30px;
+  font-size: smaller;
+  text-align: center;
+  vertical-align: text-bottom;
+}
+
+.custom-control-label {
+  color:#0078bd;
+  font-weight: 400;
+}
+
+.teaserTitle{
+  font-family: 'Cousine', monospace; font-size: 20px; color: orange;
+}
+
+@media only screen and (max-width:411px){
+
+  .form-inline{
+    width: 80%;
+    }
+}
+
+p{color: Black;
+font:Verdana;
+font-size: 18px}
+
+
+ #toasts {
+   position: absolute;
+   top: auto;
+ }
+
+ .toast {
+   background-color: #fff;
+   border-radius: 5px;
+   padding: 1rem 2rem;
+ }
+
+ .toast.info {
+   color: orange;
+ }
+
+ .toast.success {
+   color: green;
+ }
+
+ .toast.error {
+   color: red;
+ }

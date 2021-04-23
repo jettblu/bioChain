@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="You'll now recieve updates on Blockchain and Biotech.">
+  <title>bioChain</title>
+  <link rel="icon" type="image/svg+xml" href="../biochainlogo.svg">
+	<link rel="alternate icon"  href="../biochainlogo.png">
+    <!-- Icons -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet">
+  <script src="../scripts/textAnimation.js"></script>
+	<!-- Materialize components -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+   <link rel="stylesheet" href="../style/style.css">
+   <script>
+       $(function(){
+       $("#navBar").load("../components/navBar.html");
+       });
+  </script>
+
+</head>
+
+<body>
+  <div class="section"></div>
+  <main>
+    <div id="navBar"></div>
+    <center>
+
+
+      <div class="container">
+
+        <a href="../index.html"><img class="hide-on-med-and-up" style="width: 350px; display:block; margin-right: 20px;"" src="../biochainImg.png" /></a>
+        <a href="../index.html"><img class="hide-on-small-only" style="width: 400px; display:block" src="../biochainMain.svg" /></a>
+
+   <h2 class="text" style="  font-family: 'Cousine', monospace;">Email Added. Thanks for joining. Here's to a better tomorrow.</h2>
+   <a href="../all.html">Previous Pieces &#8594</a>
+
+     </div>
+    </center>
+
+
+    <div class="section"></div>
+    <div class="section"></div>
+  </main>
+
+<script>
+  const phrases = ["Welcome to the future.", "Blockchain", "and", "BioTech", "Your inbox.", "Every Sunday.", "Let's change the world together."];
+
+  const el = document.querySelector(".text");
+  const fx = new TextScramble(el);
+  let counter = 0;
+  const next = () => {
+    fx.setText(phrases[counter]).then(() => {
+      setTimeout(next, 1500);
+    });
+    counter = (counter + 1) % phrases.length;
+  };
+  next();
+  </script>
+</body>
+</html>
